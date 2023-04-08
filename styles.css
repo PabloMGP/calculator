@@ -1,0 +1,36 @@
+* {
+    border: solid red;
+}
+
+.main-container {
+    display: flex;
+    max-width: 1200px;
+}
+
+.calculator-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculator-display {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.calculator-display div.display {
+    grid-column: 1/4;
+}
+
+.calculator-display div.delete {
+    grid-column: 4/6;
+}
+
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(70px, auto);
+}
