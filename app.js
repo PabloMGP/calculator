@@ -35,6 +35,12 @@ function inputDigit(digit) {
   calculator.displayValue = displayValue === "0" ? digit : displayValue + digit;
 }
 
+function inputDecimal(dot) {
+  if (!calculator.displayValue.includes(dot)) {
+    calculator.displayValue += dot;
+  }
+}
+
 updateDisplay();
 
 
@@ -54,6 +60,10 @@ buttons.forEach(element => {
       return;
     } if (target.classList.contains("number")) {
       inputDigit(target.value);
+      updateDisplay();
+      return;
+    } if (target.classList.contains("decimal-btn")) {
+      inputDecimal(target.value);
       updateDisplay();
       return;
     } if (target.classList.contains("clear")) {

@@ -14,22 +14,22 @@
 
 .calculator-display {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: minmax(70px, auto);
     align-items: center;
     justify-items: center;
 }
 
-.calculator-display button.display {
+.calculator-display input.display {
     grid-column: 1/4;
 }
 
-.calculator-display button.delete {
+.calculator-display input.delete {
     grid-column: 4/6;
 }
 
 .calculator-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(70px, auto);
 }
