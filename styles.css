@@ -20,11 +20,11 @@
     justify-items: center;
 }
 
-.calculator-display div.display {
+.calculator-display button.display {
     grid-column: 1/4;
 }
 
-.calculator-display div.delete {
+.calculator-display button.delete {
     grid-column: 4/6;
 }
 
